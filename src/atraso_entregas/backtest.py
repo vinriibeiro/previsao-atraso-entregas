@@ -78,8 +78,8 @@ def executar(tabela: pd.DataFrame | None = None) -> pd.DataFrame:
                 {
                     "origem": origem.strftime("%Y-%m"),
                     "candidato": nome,
-                    "n_treino": int(len(treino)),
-                    "n_avaliacao": int(len(avaliacao)),
+                    "n_treino": len(treino),
+                    "n_avaliacao": len(avaliacao),
                     "taxa_atraso": float(y.mean()),
                     "roc_auc": float(roc_auc_score(y, nota)),
                     # Lift: quantas vezes o PR-AUC supera o de um modelo sem informação.

@@ -49,7 +49,7 @@ FRACAO_SINALIZADA = 0.10  # capacidade da política principal: 10% dos pedidos d
 
 def _resumo_do_periodo(df: pd.DataFrame) -> dict:
     return {
-        "pedidos": int(len(df)),
+        "pedidos": len(df),
         "atrasos": int(df[ALVO].sum()),
         "taxa_atraso": float(df[ALVO].mean()),
         "de": str(df["data_compra"].min().date()),

@@ -14,7 +14,7 @@ CORTES = np.round(np.arange(0.01, 0.951, 0.005), 3)
 def captura_no_topo(y, prob, fracao: float = 0.10) -> float:
     """Fração de todos os atrasos que está nos `fracao` pedidos de maior risco."""
     y, prob = np.asarray(y), np.asarray(prob)
-    n_topo = max(1, int(round(len(y) * fracao)))
+    n_topo = max(1, round(len(y) * fracao))
     topo = np.argsort(-prob, kind="stable")[:n_topo]
     return float(y[topo].sum() / max(y.sum(), 1))
 
@@ -23,7 +23,7 @@ def metricas(y, prob) -> dict[str, float]:
     """Métricas que não dependem de ponto de corte."""
     y, prob = np.asarray(y), np.asarray(prob)
     return {
-        "n": int(len(y)),
+        "n": len(y),
         "taxa_atraso": float(y.mean()),
         "pr_auc": float(average_precision_score(y, prob)),
         "roc_auc": float(roc_auc_score(y, prob)),
@@ -58,7 +58,7 @@ def resultado_da_decisao(
     economia = custo_sem_acao - custo
 
     return {
-        "n": int(len(y)),
+        "n": len(y),
         "sinalizados": n_sinalizados,
         "pct_sinalizados": n_sinalizados / len(y),
         "atrasos_capturados": acertos,
@@ -142,7 +142,7 @@ def precisao_no_topo(y, prob, fracoes=None) -> pd.DataFrame:
     acumulado = np.cumsum(ordenado)
     linhas = []
     for fracao in fracoes:
-        k = max(1, int(round(len(y) * fracao)))
+        k = max(1, round(len(y) * fracao))
         linhas.append(
             {
                 "fracao": float(fracao),
