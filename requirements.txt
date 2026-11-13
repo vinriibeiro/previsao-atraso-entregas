@@ -1,0 +1,9 @@
+# Ambiente do app publicado (Streamlit Community Cloud lê este arquivo).
+# O modelo salvo em models/modelo.joblib precisa da mesma versão do
+# scikit-learn usada no treino. Para desenvolver, use `pip install -e ".[dev]"`.
+scikit-learn==1.9.0
+pandas==3.0.3
+numpy==2.4.6
+pyarrow
+joblib
+streamlit

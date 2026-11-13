@@ -1,0 +1,22 @@
+# Dados brutos e intermediários (baixados por `python -m atraso_entregas.dados`)
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Segredos e configurações locais
+.env
+.streamlit/secrets.toml
+
+# Sistema e editor
+.vscode/
+.DS_Store
+Thumbs.db
