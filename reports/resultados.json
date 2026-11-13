@@ -1,0 +1,347 @@
+{
+  "gerado_em": "2026-11-13T12:48:31",
+  "busca_rapida": false,
+  "versoes": {
+    "scikit-learn": "1.9.0",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6"
+  },
+  "recortes": {
+    "inicio_treino": "2017-02-01",
+    "fim_treino": "2018-03-01",
+    "data_de_corte": "2018-06-01",
+    "pedidos_imaturos_descartados": 4270
+  },
+  "periodos": {
+    "treino": {
+      "pedidos": 56299,
+      "atrasos": 3760,
+      "taxa_atraso": 0.06678626618590028,
+      "de": "2017-02-01",
+      "ate": "2018-02-28"
+    },
+    "validacao": {
+      "pedidos": 16281,
+      "atrasos": 1764,
+      "taxa_atraso": 0.10834715312327253,
+      "de": "2018-03-01",
+      "ate": "2018-05-22"
+    },
+    "teste": {
+      "pedidos": 18603,
+      "atrasos": 672,
+      "taxa_atraso": 0.03612320593452669,
+      "de": "2018-06-01",
+      "ate": "2018-08-29"
+    }
+  },
+  "premissas": {
+    "custo_atraso": 40.0,
+    "custo_acao": 4.0,
+    "eficacia_acao": 0.5,
+    "precisao_minima": 0.2
+  },
+  "hiperparametros_boosting": {
+    "l2_regularization": 1.8332350150669934,
+    "learning_rate": 0.011841130198891353,
+    "max_features": 0.8331992633600949,
+    "max_iter": 393.0,
+    "max_leaf_nodes": 7.0,
+    "min_samples_leaf": 211.0
+  },
+  "roc_auc_validacao_cruzada": 0.6895505520344976,
+  "validacao": {
+    "n": 16281,
+    "taxa_atraso": 0.10834715312327253,
+    "pr_auc": 0.2516041254667134,
+    "roc_auc": 0.7358494544749083,
+    "brier": 0.0894339464643694,
+    "captura_top10": 0.29308390022675734
+  },
+  "teste": {
+    "Regra: atraso histórico da rota": {
+      "n": 18603,
+      "taxa_atraso": 0.03612320593452669,
+      "pr_auc": 0.03416902529583447,
+      "roc_auc": 0.4325149929889974,
+      "brier": 0.03751570872421777,
+      "captura_top10": 0.10416666666666667
+    },
+    "Regressão logística": {
+      "n": 18603,
+      "taxa_atraso": 0.03612320593452669,
+      "pr_auc": 0.098702967686837,
+      "roc_auc": 0.7328260315335771,
+      "brier": 0.05377313698565966,
+      "captura_top10": 0.31547619047619047
+    },
+    "Gradient boosting": {
+      "n": 18603,
+      "taxa_atraso": 0.03612320593452669,
+      "pr_auc": 0.051486645822958185,
+      "roc_auc": 0.5468612236456682,
+      "brier": 0.04270158816748406,
+      "captura_top10": 0.19791666666666666
+    },
+    "Mistura (modelo final)": {
+      "n": 18603,
+      "taxa_atraso": 0.03612320593452669,
+      "pr_auc": 0.07993134833782159,
+      "roc_auc": 0.6995059268200059,
+      "brier": 0.04569383911348511,
+      "captura_top10": 0.25
+    }
+  },
+  "politica_capacidade_teste": {
+    "5%": {
+      "n": 18603,
+      "sinalizados": 936,
+      "pct_sinalizados": 0.050314465408805034,
+      "atrasos_capturados": 78,
+      "alarmes_falsos": 858,
+      "atrasos_perdidos": 594,
+      "precisao": 0.08333333333333333,
+      "recall": 0.11607142857142858,
+      "custo": 29064.0,
+      "custo_sem_acao": 26880.0,
+      "economia": -2184.0,
+      "economia_pct": -0.08125,
+      "custo_maximo_da_acao": 1.6666666666666665
+    },
+    "10%": {
+      "n": 18603,
+      "sinalizados": 1867,
+      "pct_sinalizados": 0.10036015696393055,
+      "atrasos_capturados": 127,
+      "alarmes_falsos": 1740,
+      "atrasos_perdidos": 545,
+      "precisao": 0.06802356722013926,
+      "recall": 0.18898809523809523,
+      "custo": 31808.0,
+      "custo_sem_acao": 26880.0,
+      "economia": -4928.0,
+      "economia_pct": -0.18333333333333332,
+      "custo_maximo_da_acao": 1.3604713444027852
+    },
+    "20%": {
+      "n": 18603,
+      "sinalizados": 3727,
+      "pct_sinalizados": 0.20034403053270977,
+      "atrasos_capturados": 226,
+      "alarmes_falsos": 3501,
+      "atrasos_perdidos": 446,
+      "precisao": 0.06063858331097397,
+      "recall": 0.33630952380952384,
+      "custo": 37268.0,
+      "custo_sem_acao": 26880.0,
+      "economia": -10388.0,
+      "economia_pct": -0.38645833333333335,
+      "custo_maximo_da_acao": 1.2127716662194794
+    }
+  },
+  "politica_corte_por_custo": {
+    "corte": 0.2,
+    "validacao": {
+      "n": 16281,
+      "sinalizados": 2359,
+      "pct_sinalizados": 0.1448928198513605,
+      "atrasos_capturados": 693,
+      "alarmes_falsos": 1666,
+      "atrasos_perdidos": 1071,
+      "precisao": 0.29376854599406527,
+      "recall": 0.39285714285714285,
+      "custo": 66136.0,
+      "custo_sem_acao": 70560.0,
+      "economia": 4424.0,
+      "economia_pct": 0.0626984126984127
+    },
+    "teste": {
+      "n": 18603,
+      "sinalizados": 3065,
+      "pct_sinalizados": 0.1647583723055421,
+      "atrasos_capturados": 244,
+      "alarmes_falsos": 2821,
+      "atrasos_perdidos": 428,
+      "precisao": 0.07960848287112561,
+      "recall": 0.3630952380952381,
+      "custo": 34260.0,
+      "custo_sem_acao": 26880.0,
+      "economia": -7380.0,
+      "economia_pct": -0.27455357142857145
+    }
+  },
+  "teste_por_mes": [
+    {
+      "grupo": "2018-06",
+      "n": 6096,
+      "taxa_atraso": 0.011646981627296589,
+      "roc_auc": 0.7674455028928759,
+      "lift": 5.258616006731833,
+      "pct_sinalizados": 0.10006561679790026,
+      "precisao": 0.04262295081967213,
+      "recall": 0.36619718309859156
+    },
+    {
+      "grupo": "2018-07",
+      "n": 6156,
+      "taxa_atraso": 0.03378817413905133,
+      "roc_auc": 0.6570348468780716,
+      "lift": 2.605620692374036,
+      "pct_sinalizados": 0.10055230669265756,
+      "precisao": 0.07269789983844911,
+      "recall": 0.21634615384615385
+    },
+    {
+      "grupo": "2018-08",
+      "n": 6351,
+      "taxa_atraso": 0.061880018894662256,
+      "roc_auc": 0.620729329223137,
+      "lift": 1.4925511351016736,
+      "pct_sinalizados": 0.1004566210045662,
+      "precisao": 0.0877742946708464,
+      "recall": 0.14249363867684478
+    }
+  ],
+  "teste_por_regiao": [
+    {
+      "grupo": "Centro-Oeste",
+      "n": 1066,
+      "taxa_atraso": 0.03377110694183865,
+      "roc_auc": 0.784277238403452,
+      "lift": 8.548313338114388,
+      "pct_sinalizados": 0.05909943714821764,
+      "precisao": 0.19047619047619047,
+      "recall": 0.3333333333333333
+    },
+    {
+      "grupo": "Nordeste",
+      "n": 1640,
+      "taxa_atraso": 0.0475609756097561,
+      "roc_auc": 0.6929643126826226,
+      "lift": 2.440377076384111,
+      "pct_sinalizados": 0.3823170731707317,
+      "precisao": 0.07496012759170653,
+      "recall": 0.6025641025641025
+    },
+    {
+      "grupo": "Norte",
+      "n": 301,
+      "taxa_atraso": 0.019933554817275746,
+      "roc_auc": 0.7338983050847457,
+      "lift": 3.8759569922613406,
+      "pct_sinalizados": 0.36212624584717606,
+      "precisao": 0.027522935779816515,
+      "recall": 0.5
+    },
+    {
+      "grupo": "Sudeste",
+      "n": 13143,
+      "taxa_atraso": 0.038651753785284945,
+      "roc_auc": 0.7221787373531217,
+      "lift": 2.1931045872135746,
+      "pct_sinalizados": 0.0710644449516853,
+      "precisao": 0.06316916488222699,
+      "recall": 0.11614173228346457
+    },
+    {
+      "grupo": "Sul",
+      "n": 2453,
+      "taxa_atraso": 0.017937219730941704,
+      "roc_auc": 0.60523982037058,
+      "lift": 2.196281593269721,
+      "pct_sinalizados": 0.05462698736241337,
+      "precisao": 0.04477611940298507,
+      "recall": 0.13636363636363635
+    }
+  ],
+  "calibracao_teste": [
+    {
+      "faixa": 0,
+      "n": 1861,
+      "previsto": 0.02140899317210825,
+      "observado": 0.005910800644814616
+    },
+    {
+      "faixa": 1,
+      "n": 1860,
+      "previsto": 0.03332989211456174,
+      "observado": 0.01129032258064516
+    },
+    {
+      "faixa": 2,
+      "n": 1860,
+      "previsto": 0.04418388484966097,
+      "observado": 0.013978494623655914
+    },
+    {
+      "faixa": 3,
+      "n": 1860,
+      "previsto": 0.05656575419039937,
+      "observado": 0.01881720430107527
+    },
+    {
+      "faixa": 4,
+      "n": 1861,
+      "previsto": 0.07160964099175887,
+      "observado": 0.03170338527673294
+    },
+    {
+      "faixa": 5,
+      "n": 1860,
+      "previsto": 0.09015239160062767,
+      "observado": 0.03494623655913978
+    },
+    {
+      "faixa": 6,
+      "n": 1860,
+      "previsto": 0.11543463538223554,
+      "observado": 0.03924731182795699
+    },
+    {
+      "faixa": 7,
+      "n": 1860,
+      "previsto": 0.15213578528922972,
+      "observado": 0.0532258064516129
+    },
+    {
+      "faixa": 8,
+      "n": 1860,
+      "previsto": 0.21272002733433223,
+      "observado": 0.06182795698924731
+    },
+    {
+      "faixa": 9,
+      "n": 1861,
+      "previsto": 0.3464976976681415,
+      "observado": 0.09027404621171413
+    }
+  ],
+  "importancia_permutacao": {
+    "prazo_prometido_dias": 0.16995,
+    "folga_prazo_rota_dias": 0.14872,
+    "uf_cliente": 0.01749,
+    "vendedor_dias_postagem": 0.01446,
+    "frete_sobre_valor": 0.00862,
+    "uf_vendedor": 0.00847,
+    "rota_taxa_atraso": 0.00401,
+    "n_vendedores": 0.00398,
+    "n_itens": 0.00355,
+    "valor_produtos": 0.00309,
+    "tipo_pagamento": 0.00263,
+    "categoria_principal": 0.00119,
+    "vendedor_pedidos_30d": 0.00068,
+    "peso_total_g": 0.00066,
+    "volume_total_cm3": 0.00048,
+    "hora_compra": -4e-05,
+    "dia_semana": -6e-05,
+    "vendedor_taxa_atraso": -0.00085,
+    "parcelas": -0.00163,
+    "destino_taxa_atraso": -0.00409,
+    "rota_dias_entrega": -0.01441,
+    "mesma_uf": -0.01976,
+    "distancia_km": -0.02614,
+    "folga_prazo_destino_dias": -0.0268,
+    "valor_frete": -0.02863,
+    "destino_dias_entrega": -0.02934
+  }
+}

@@ -1,0 +1,608 @@
+{
+  "por_origem": [
+    {
+      "origem": "2017-08",
+      "candidato": "Regra: atraso histórico da rota",
+      "n_treino": 13896,
+      "n_avaliacao": 12821,
+      "taxa_atraso": 0.03829654473130021,
+      "roc_auc": 0.5782712507205944,
+      "lift": 1.5022907724618177,
+      "previsto_medio": 0.029994911529573728
+    },
+    {
+      "origem": "2017-08",
+      "candidato": "Mistura (modelo final)",
+      "n_treino": 13896,
+      "n_avaliacao": 12821,
+      "taxa_atraso": 0.03829654473130021,
+      "roc_auc": 0.6859150846626132,
+      "lift": 2.1788824796652237,
+      "previsto_medio": 0.035261349128770235
+    },
+    {
+      "origem": "2017-08",
+      "candidato": "Regressão logística",
+      "n_treino": 13896,
+      "n_avaliacao": 12821,
+      "taxa_atraso": 0.03829654473130021,
+      "roc_auc": 0.684346047178491,
+      "lift": 2.09431542090961,
+      "previsto_medio": 0.0406799726635922
+    },
+    {
+      "origem": "2017-08",
+      "candidato": "Gradient boosting",
+      "n_treino": 13896,
+      "n_avaliacao": 12821,
+      "taxa_atraso": 0.03829654473130021,
+      "roc_auc": 0.6585303508571976,
+      "lift": 1.9719995728115858,
+      "previsto_medio": 0.02984272559394826
+    },
+    {
+      "origem": "2017-08",
+      "candidato": "Regressão logística + contagens acumuladas",
+      "n_treino": 13896,
+      "n_avaliacao": 12821,
+      "taxa_atraso": 0.03829654473130021,
+      "roc_auc": 0.6817428225496075,
+      "lift": 2.0353235524541606,
+      "previsto_medio": 0.04190220214823879
+    },
+    {
+      "origem": "2017-08",
+      "candidato": "Gradient boosting + contagens acumuladas",
+      "n_treino": 13896,
+      "n_avaliacao": 12821,
+      "taxa_atraso": 0.03829654473130021,
+      "roc_auc": 0.6511676519607601,
+      "lift": 1.9185378934844688,
+      "previsto_medio": 0.028835309268689477
+    },
+    {
+      "origem": "2017-08",
+      "candidato": "Gradient boosting, 1ª versão das variáveis",
+      "n_treino": 13896,
+      "n_avaliacao": 12821,
+      "taxa_atraso": 0.03829654473130021,
+      "roc_auc": 0.6433320449353571,
+      "lift": 1.8067801870409592,
+      "previsto_medio": 0.04322084037838155
+    },
+    {
+      "origem": "2017-09",
+      "candidato": "Regra: atraso histórico da rota",
+      "n_treino": 18119,
+      "n_avaliacao": 15916,
+      "taxa_atraso": 0.07998240764011058,
+      "roc_auc": 0.6381642719665992,
+      "lift": 1.6068379882385775,
+      "previsto_medio": 0.03125452177474558
+    },
+    {
+      "origem": "2017-09",
+      "candidato": "Mistura (modelo final)",
+      "n_treino": 18119,
+      "n_avaliacao": 15916,
+      "taxa_atraso": 0.07998240764011058,
+      "roc_auc": 0.6512711354537549,
+      "lift": 1.6633694398812946,
+      "previsto_medio": 0.03204595042593526
+    },
+    {
+      "origem": "2017-09",
+      "candidato": "Regressão logística",
+      "n_treino": 18119,
+      "n_avaliacao": 15916,
+      "taxa_atraso": 0.07998240764011058,
+      "roc_auc": 0.6428931051832782,
+      "lift": 1.6318598509624618,
+      "previsto_medio": 0.0358091349873276
+    },
+    {
+      "origem": "2017-09",
+      "candidato": "Gradient boosting",
+      "n_treino": 18119,
+      "n_avaliacao": 15916,
+      "taxa_atraso": 0.07998240764011058,
+      "roc_auc": 0.6445369954162806,
+      "lift": 1.6107386647168656,
+      "previsto_medio": 0.02828276586454293
+    },
+    {
+      "origem": "2017-09",
+      "candidato": "Regressão logística + contagens acumuladas",
+      "n_treino": 18119,
+      "n_avaliacao": 15916,
+      "taxa_atraso": 0.07998240764011058,
+      "roc_auc": 0.6459568577925777,
+      "lift": 1.635631335344952,
+      "previsto_medio": 0.034978778624114665
+    },
+    {
+      "origem": "2017-09",
+      "candidato": "Gradient boosting + contagens acumuladas",
+      "n_treino": 18119,
+      "n_avaliacao": 15916,
+      "taxa_atraso": 0.07998240764011058,
+      "roc_auc": 0.6324947738903902,
+      "lift": 1.5657687092457226,
+      "previsto_medio": 0.027183026574546885
+    },
+    {
+      "origem": "2017-09",
+      "candidato": "Gradient boosting, 1ª versão das variáveis",
+      "n_treino": 18119,
+      "n_avaliacao": 15916,
+      "taxa_atraso": 0.07998240764011058,
+      "roc_auc": 0.5747995806344441,
+      "lift": 1.3182772960957598,
+      "previsto_medio": 0.03938146285835721
+    },
+    {
+      "origem": "2017-10",
+      "candidato": "Regra: atraso histórico da rota",
+      "n_treino": 22391,
+      "n_avaliacao": 17279,
+      "taxa_atraso": 0.08692632675502054,
+      "roc_auc": 0.6265418899750155,
+      "lift": 1.4772231335487627,
+      "previsto_medio": 0.03274002019878008
+    },
+    {
+      "origem": "2017-10",
+      "candidato": "Mistura (modelo final)",
+      "n_treino": 22391,
+      "n_avaliacao": 17279,
+      "taxa_atraso": 0.08692632675502054,
+      "roc_auc": 0.6490461641350018,
+      "lift": 1.5282308404394074,
+      "previsto_medio": 0.026834966694799504
+    },
+    {
+      "origem": "2017-10",
+      "candidato": "Regressão logística",
+      "n_treino": 22391,
+      "n_avaliacao": 17279,
+      "taxa_atraso": 0.08692632675502054,
+      "roc_auc": 0.6352699791290513,
+      "lift": 1.4951547495532782,
+      "previsto_medio": 0.029413146770333694
+    },
+    {
+      "origem": "2017-10",
+      "candidato": "Gradient boosting",
+      "n_treino": 22391,
+      "n_avaliacao": 17279,
+      "taxa_atraso": 0.08692632675502054,
+      "roc_auc": 0.647476074452124,
+      "lift": 1.4954341079209204,
+      "previsto_medio": 0.024256786619265322
+    },
+    {
+      "origem": "2017-10",
+      "candidato": "Regressão logística + contagens acumuladas",
+      "n_treino": 22391,
+      "n_avaliacao": 17279,
+      "taxa_atraso": 0.08692632675502054,
+      "roc_auc": 0.6444329746642768,
+      "lift": 1.5255013209731698,
+      "previsto_medio": 0.02775263976559882
+    },
+    {
+      "origem": "2017-10",
+      "candidato": "Gradient boosting + contagens acumuladas",
+      "n_treino": 22391,
+      "n_avaliacao": 17279,
+      "taxa_atraso": 0.08692632675502054,
+      "roc_auc": 0.6488404634601416,
+      "lift": 1.5000641706871063,
+      "previsto_medio": 0.024218697628381157
+    },
+    {
+      "origem": "2017-10",
+      "candidato": "Gradient boosting, 1ª versão das variáveis",
+      "n_treino": 22391,
+      "n_avaliacao": 17279,
+      "taxa_atraso": 0.08692632675502054,
+      "roc_auc": 0.582659979590712,
+      "lift": 1.2606851716713576,
+      "previsto_medio": 0.031408669509434196
+    },
+    {
+      "origem": "2017-11",
+      "candidato": "Regra: atraso histórico da rota",
+      "n_treino": 26403,
+      "n_avaliacao": 19870,
+      "taxa_atraso": 0.08646200301962757,
+      "roc_auc": 0.6002834010408036,
+      "lift": 1.4042227847170945,
+      "previsto_medio": 0.03833589422477911
+    },
+    {
+      "origem": "2017-11",
+      "candidato": "Mistura (modelo final)",
+      "n_treino": 26403,
+      "n_avaliacao": 19870,
+      "taxa_atraso": 0.08646200301962757,
+      "roc_auc": 0.6729400506702937,
+      "lift": 1.7536810202934627,
+      "previsto_medio": 0.026352982057806867
+    },
+    {
+      "origem": "2017-11",
+      "candidato": "Regressão logística",
+      "n_treino": 26403,
+      "n_avaliacao": 19870,
+      "taxa_atraso": 0.08646200301962757,
+      "roc_auc": 0.6636963840722068,
+      "lift": 1.7105152829286738,
+      "previsto_medio": 0.02757912916281677
+    },
+    {
+      "origem": "2017-11",
+      "candidato": "Gradient boosting",
+      "n_treino": 26403,
+      "n_avaliacao": 19870,
+      "taxa_atraso": 0.08646200301962757,
+      "roc_auc": 0.6631104478749107,
+      "lift": 1.6992406896574104,
+      "previsto_medio": 0.025126834952796967
+    },
+    {
+      "origem": "2017-11",
+      "candidato": "Regressão logística + contagens acumuladas",
+      "n_treino": 26403,
+      "n_avaliacao": 19870,
+      "taxa_atraso": 0.08646200301962757,
+      "roc_auc": 0.6697436560802557,
+      "lift": 1.732901724454793,
+      "previsto_medio": 0.027180222685086245
+    },
+    {
+      "origem": "2017-11",
+      "candidato": "Gradient boosting + contagens acumuladas",
+      "n_treino": 26403,
+      "n_avaliacao": 19870,
+      "taxa_atraso": 0.08646200301962757,
+      "roc_auc": 0.6629679761537675,
+      "lift": 1.6973713046936894,
+      "previsto_medio": 0.025360476677285998
+    },
+    {
+      "origem": "2017-11",
+      "candidato": "Gradient boosting, 1ª versão das variáveis",
+      "n_treino": 26403,
+      "n_avaliacao": 19870,
+      "taxa_atraso": 0.08646200301962757,
+      "roc_auc": 0.6265554525720203,
+      "lift": 1.508858866593703,
+      "previsto_medio": 0.027217506506705777
+    },
+    {
+      "origem": "2017-12",
+      "candidato": "Regra: atraso histórico da rota",
+      "n_treino": 30934,
+      "n_avaliacao": 19136,
+      "taxa_atraso": 0.09092809364548494,
+      "roc_auc": 0.6681340736277066,
+      "lift": 2.0778043171268132,
+      "previsto_medio": 0.04447359102350109
+    },
+    {
+      "origem": "2017-12",
+      "candidato": "Mistura (modelo final)",
+      "n_treino": 30934,
+      "n_avaliacao": 19136,
+      "taxa_atraso": 0.09092809364548494,
+      "roc_auc": 0.6883034777449168,
+      "lift": 2.030362323389177,
+      "previsto_medio": 0.026343241950323077
+    },
+    {
+      "origem": "2017-12",
+      "candidato": "Regressão logística",
+      "n_treino": 30934,
+      "n_avaliacao": 19136,
+      "taxa_atraso": 0.09092809364548494,
+      "roc_auc": 0.6711330950700781,
+      "lift": 1.812856628017614,
+      "previsto_medio": 0.02583563661004749
+    },
+    {
+      "origem": "2017-12",
+      "candidato": "Gradient boosting",
+      "n_treino": 30934,
+      "n_avaliacao": 19136,
+      "taxa_atraso": 0.09092809364548494,
+      "roc_auc": 0.6883575759257644,
+      "lift": 2.09765769753785,
+      "previsto_medio": 0.02685084729059866
+    },
+    {
+      "origem": "2017-12",
+      "candidato": "Regressão logística + contagens acumuladas",
+      "n_treino": 30934,
+      "n_avaliacao": 19136,
+      "taxa_atraso": 0.09092809364548494,
+      "roc_auc": 0.6605713461675693,
+      "lift": 1.7539371376924793,
+      "previsto_medio": 0.02766609732350922
+    },
+    {
+      "origem": "2017-12",
+      "candidato": "Gradient boosting + contagens acumuladas",
+      "n_treino": 30934,
+      "n_avaliacao": 19136,
+      "taxa_atraso": 0.09092809364548494,
+      "roc_auc": 0.6590920623845353,
+      "lift": 1.9089091323376612,
+      "previsto_medio": 0.03436611686997233
+    },
+    {
+      "origem": "2017-12",
+      "candidato": "Gradient boosting, 1ª versão das variáveis",
+      "n_treino": 30934,
+      "n_avaliacao": 19136,
+      "taxa_atraso": 0.09092809364548494,
+      "roc_auc": 0.6499525918231962,
+      "lift": 1.9178485543850248,
+      "previsto_medio": 0.030211447413847795
+    },
+    {
+      "origem": "2018-01",
+      "candidato": "Regra: atraso histórico da rota",
+      "n_treino": 38012,
+      "n_avaliacao": 20625,
+      "taxa_atraso": 0.12882424242424242,
+      "roc_auc": 0.6597030190585127,
+      "lift": 1.8931253069273284,
+      "previsto_medio": 0.04980767664740897
+    },
+    {
+      "origem": "2018-01",
+      "candidato": "Mistura (modelo final)",
+      "n_treino": 38012,
+      "n_avaliacao": 20625,
+      "taxa_atraso": 0.12882424242424242,
+      "roc_auc": 0.7403055291538237,
+      "lift": 2.43038763599662,
+      "previsto_medio": 0.06616915291269794
+    },
+    {
+      "origem": "2018-01",
+      "candidato": "Regressão logística",
+      "n_treino": 38012,
+      "n_avaliacao": 20625,
+      "taxa_atraso": 0.12882424242424242,
+      "roc_auc": 0.7314336954485388,
+      "lift": 2.278438725192099,
+      "previsto_medio": 0.06465820781571277
+    },
+    {
+      "origem": "2018-01",
+      "candidato": "Gradient boosting",
+      "n_treino": 38012,
+      "n_avaliacao": 20625,
+      "taxa_atraso": 0.12882424242424242,
+      "roc_auc": 0.7307364118404283,
+      "lift": 2.386214377803673,
+      "previsto_medio": 0.06768009800968307
+    },
+    {
+      "origem": "2018-01",
+      "candidato": "Regressão logística + contagens acumuladas",
+      "n_treino": 38012,
+      "n_avaliacao": 20625,
+      "taxa_atraso": 0.12882424242424242,
+      "roc_auc": 0.5776181555232553,
+      "lift": 1.1203266710406399,
+      "previsto_medio": 0.16976655118237696
+    },
+    {
+      "origem": "2018-01",
+      "candidato": "Gradient boosting + contagens acumuladas",
+      "n_treino": 38012,
+      "n_avaliacao": 20625,
+      "taxa_atraso": 0.12882424242424242,
+      "roc_auc": 0.7197672498358642,
+      "lift": 2.268406615210007,
+      "previsto_medio": 0.10246961326299404
+    },
+    {
+      "origem": "2018-01",
+      "candidato": "Gradient boosting, 1ª versão das variáveis",
+      "n_treino": 38012,
+      "n_avaliacao": 20625,
+      "taxa_atraso": 0.12882424242424242,
+      "roc_auc": 0.6736337983538502,
+      "lift": 1.876769330085012,
+      "previsto_medio": 0.0422251413519564
+    },
+    {
+      "origem": "2018-02",
+      "candidato": "Regra: atraso histórico da rota",
+      "n_treino": 43477,
+      "n_avaliacao": 20139,
+      "taxa_atraso": 0.1264710263667511,
+      "roc_auc": 0.62441034651329,
+      "lift": 1.5045055347785772,
+      "previsto_medio": 0.0554440809843889
+    },
+    {
+      "origem": "2018-02",
+      "candidato": "Mistura (modelo final)",
+      "n_treino": 43477,
+      "n_avaliacao": 20139,
+      "taxa_atraso": 0.1264710263667511,
+      "roc_auc": 0.736325665483454,
+      "lift": 2.3422703424329114,
+      "previsto_medio": 0.0786554418664931
+    },
+    {
+      "origem": "2018-02",
+      "candidato": "Regressão logística",
+      "n_treino": 43477,
+      "n_avaliacao": 20139,
+      "taxa_atraso": 0.1264710263667511,
+      "roc_auc": 0.7326651293115531,
+      "lift": 2.2754428762390773,
+      "previsto_medio": 0.08163919936597659
+    },
+    {
+      "origem": "2018-02",
+      "candidato": "Gradient boosting",
+      "n_treino": 43477,
+      "n_avaliacao": 20139,
+      "taxa_atraso": 0.1264710263667511,
+      "roc_auc": 0.7261777246251597,
+      "lift": 2.282435480936629,
+      "previsto_medio": 0.0756716843670096
+    },
+    {
+      "origem": "2018-02",
+      "candidato": "Regressão logística + contagens acumuladas",
+      "n_treino": 43477,
+      "n_avaliacao": 20139,
+      "taxa_atraso": 0.1264710263667511,
+      "roc_auc": 0.6047961243582004,
+      "lift": 1.2702390052436847,
+      "previsto_medio": 0.1540748143074414
+    },
+    {
+      "origem": "2018-02",
+      "candidato": "Gradient boosting + contagens acumuladas",
+      "n_treino": 43477,
+      "n_avaliacao": 20139,
+      "taxa_atraso": 0.1264710263667511,
+      "roc_auc": 0.7074828378820155,
+      "lift": 2.055116376059052,
+      "previsto_medio": 0.08270350067410166
+    },
+    {
+      "origem": "2018-02",
+      "candidato": "Gradient boosting, 1ª versão das variáveis",
+      "n_treino": 43477,
+      "n_avaliacao": 20139,
+      "taxa_atraso": 0.1264710263667511,
+      "roc_auc": 0.6506127727330104,
+      "lift": 1.7695802434415588,
+      "previsto_medio": 0.057593558422476154
+    },
+    {
+      "origem": "2018-03",
+      "candidato": "Regra: atraso histórico da rota",
+      "n_treino": 49606,
+      "n_avaliacao": 16281,
+      "taxa_atraso": 0.10834715312327253,
+      "roc_auc": 0.5935836895893578,
+      "lift": 1.4269145795577545,
+      "previsto_medio": 0.058211987158498645
+    },
+    {
+      "origem": "2018-03",
+      "candidato": "Mistura (modelo final)",
+      "n_treino": 49606,
+      "n_avaliacao": 16281,
+      "taxa_atraso": 0.10834715312327253,
+      "roc_auc": 0.7309035368182772,
+      "lift": 2.245043441562916,
+      "previsto_medio": 0.07773174460189952
+    },
+    {
+      "origem": "2018-03",
+      "candidato": "Regressão logística",
+      "n_treino": 49606,
+      "n_avaliacao": 16281,
+      "taxa_atraso": 0.10834715312327253,
+      "roc_auc": 0.7362907620856429,
+      "lift": 2.3015253400549134,
+      "previsto_medio": 0.08250320732310845
+    },
+    {
+      "origem": "2018-03",
+      "candidato": "Gradient boosting",
+      "n_treino": 49606,
+      "n_avaliacao": 16281,
+      "taxa_atraso": 0.10834715312327253,
+      "roc_auc": 0.7103178508206112,
+      "lift": 2.064657444418738,
+      "previsto_medio": 0.0729602818806906
+    },
+    {
+      "origem": "2018-03",
+      "candidato": "Regressão logística + contagens acumuladas",
+      "n_treino": 49606,
+      "n_avaliacao": 16281,
+      "taxa_atraso": 0.10834715312327253,
+      "roc_auc": 0.6258005509843256,
+      "lift": 1.4458852846784762,
+      "previsto_medio": 0.13676334208283944
+    },
+    {
+      "origem": "2018-03",
+      "candidato": "Gradient boosting + contagens acumuladas",
+      "n_treino": 49606,
+      "n_avaliacao": 16281,
+      "taxa_atraso": 0.10834715312327253,
+      "roc_auc": 0.6974553799384786,
+      "lift": 1.9763180483125944,
+      "previsto_medio": 0.08409560874085341
+    },
+    {
+      "origem": "2018-03",
+      "candidato": "Gradient boosting, 1ª versão das variáveis",
+      "n_treino": 49606,
+      "n_avaliacao": 16281,
+      "taxa_atraso": 0.10834715312327253,
+      "roc_auc": 0.6733593634923603,
+      "lift": 1.8615918741466415,
+      "previsto_medio": 0.06121677209826741
+    }
+  ],
+  "resumo": {
+    "Mistura (modelo final)": {
+      "roc_auc_mean": 0.694,
+      "roc_auc_min": 0.649,
+      "lift_mean": 2.022,
+      "lift_min": 1.528
+    },
+    "Regressão logística": {
+      "roc_auc_mean": 0.687,
+      "roc_auc_min": 0.635,
+      "lift_mean": 1.95,
+      "lift_min": 1.495
+    },
+    "Gradient boosting": {
+      "roc_auc_mean": 0.684,
+      "roc_auc_min": 0.645,
+      "lift_mean": 1.951,
+      "lift_min": 1.495
+    },
+    "Gradient boosting + contagens acumuladas": {
+      "roc_auc_mean": 0.672,
+      "roc_auc_min": 0.632,
+      "lift_mean": 1.861,
+      "lift_min": 1.5
+    },
+    "Regressão logística + contagens acumuladas": {
+      "roc_auc_mean": 0.639,
+      "roc_auc_min": 0.578,
+      "lift_mean": 1.565,
+      "lift_min": 1.12
+    },
+    "Gradient boosting, 1ª versão das variáveis": {
+      "roc_auc_mean": 0.634,
+      "roc_auc_min": 0.575,
+      "lift_mean": 1.665,
+      "lift_min": 1.261
+    },
+    "Regra: atraso histórico da rota": {
+      "roc_auc_mean": 0.624,
+      "roc_auc_min": 0.578,
+      "lift_mean": 1.612,
+      "lift_min": 1.404
+    }
+  }
+}
